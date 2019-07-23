@@ -34,5 +34,17 @@
   </dependencies>
   <build>
     <finalName>mvc1</finalName>
+      <plugins>
+        <plugin>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-maven-plugin</artifactId>
+          <version>9.4.12.v20180830</version>
+            <configuration>
+                <httpConnector>
+                    <port>9999</port>
+                </httpConnector>
+            </configuration>
+        </plugin>
+      </plugins>
   </build>
 </project>
